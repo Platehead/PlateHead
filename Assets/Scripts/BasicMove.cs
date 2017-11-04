@@ -14,6 +14,10 @@ public class BasicMove : MonoBehaviour
         StartCoroutine(Jump());
     }
 
+    private void FixedUpdate()
+    {
+    }
+
     IEnumerator Move()
     {
         while (true)
@@ -22,9 +26,6 @@ public class BasicMove : MonoBehaviour
                 transform.position -= new Vector3(Speed * Time.deltaTime, 0, 0);
             else if (Input.GetKey(KeyCode.D))
                 transform.position += new Vector3(Speed * Time.deltaTime, 0, 0);
-            /*else if (Input.GetKey(KeyCode.S))
-                  GameObject.Find("Wall").transform.localScale.y
-                  */
             yield return null;
         }
     }
@@ -47,5 +48,12 @@ public class BasicMove : MonoBehaviour
     {
         if (collision.collider.tag == "Wall")
             IsJump = false;
+    }
+
+    private void OnBecameInvisible()
+    {
+        GameObject obj = Instantiate(gameObject);
+        Destroy(gameObject);
+        obj.transform.position = new Vector3(0, 0, 0);
     }
 }
