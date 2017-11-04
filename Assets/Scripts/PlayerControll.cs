@@ -24,7 +24,7 @@ public class PlayerControll : MonoBehaviour {
 			Move(horizontalInput);
 		}
 
-		if (Input.GetKeyDown(KeyCode.Space)) {
+		if (Input.GetKeyDown(KeyCode.W)) {
 			Jump();
 		}
 	}
