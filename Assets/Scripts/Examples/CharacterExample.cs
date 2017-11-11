@@ -10,6 +10,7 @@ public class CharacterExample : MonoBehaviour {
     private void Start()
     {
         attack1 = GetComponent<MeleeAtk>();
+        attack2 = GetComponent<RangedAtk>();
        
     }
 
@@ -21,7 +22,8 @@ public class CharacterExample : MonoBehaviour {
 			attack2.Attack();
 	}
 
-	void GetDamage(float damage) {
+	void GetDamage(float damage)
+    {
 		hpManager.Hp -= damage;
 	}
 }
