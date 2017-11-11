@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TitleManager : MonoBehaviour {
 
@@ -16,6 +17,12 @@ public class TitleManager : MonoBehaviour {
 
     public void StartGame()
     {
-        Application.LoadLevel(1);
+        SceneManager.LoadScene("Game");
     }
+
+    public void BackToMain()
+    {
+        SceneManager.LoadScene("TitleScreen");
+    }
+
 }

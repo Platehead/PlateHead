@@ -1,11 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Sprites/EssentialPlateCharacter.png.meta
-guid: 8641a8f7ebf6fde44be512265dc409f0
-timeCreated: 1509780859
-=======
-guid: c64d3af5817ce924480369f91a81ec4d
-timeCreated: 1509780900
->>>>>>> 237fec08a38356a18e684d9cba5e0c7f72c95cc0:Assets/Sprites/EssentialPlateCharacter.png.meta
+guid: 88df3c61647cb3649b6789c8ce114333
+timeCreated: 1509803105
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}

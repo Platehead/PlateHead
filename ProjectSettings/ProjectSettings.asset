@@ -602,9 +602,9 @@ PlayerSettings:
   cloudServicesEnabled: {}
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 1a8a2746-644a-44f7-b8e7-4b0981996706
-  projectName: PlateWar
-  organizationId: iooi1919-naver-com
+  cloudProjectId: b67a5e93-7040-4e9b-81b1-d7f61af135b9
+  projectName: PlateWar (2)
+  organizationId: wanner0501
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
