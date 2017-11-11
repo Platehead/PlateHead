@@ -556,8 +556,9 @@ GameObject:
   - component: {fileID: 1821622387}
   - component: {fileID: 1821622386}
   - component: {fileID: 1821622385}
+  - component: {fileID: 1821622391}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -571,12 +572,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1821622384}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d1177b44cff740cb9f28892bd0d73f4, type: 3}
+  m_Script: {fileID: 11500000, guid: c97241111142a9f499b7178525b8ad19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputThreshold: 0
-  jumpPower: 400
-  moveSpeed: 5
 --- !u!50 &1821622386
 Rigidbody2D:
   serializedVersion: 4
@@ -676,6 +674,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1821622391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1821622384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01de1ae4e0ce42042aa0f240e6045d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1990756860
 GameObject:
   m_ObjectHideFlags: 0

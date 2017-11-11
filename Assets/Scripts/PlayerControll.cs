@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
 public class PlayerControll : MonoBehaviour {
-	public float inputThreshold;
+    public float inputThreshold;
 	public float jumpPower;
 	public float moveSpeed;
 	float distToGround;

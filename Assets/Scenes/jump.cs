@@ -17,7 +17,7 @@ public class jump : MonoBehaviour {
         _isJumping = false;
         _posY = transform.position.y;
         _gravity = 9.8f;
-        _jumpPower = 15.0f;
+        _jumpPower = 8.0f;
         _jumpTime = 0.0f;
     }
 
