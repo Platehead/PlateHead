@@ -14,10 +14,6 @@ public class BasicMove : MonoBehaviour
         StartCoroutine(Jump());
     }
 
-    private void FixedUpdate()
-    {
-    }
-
     IEnumerator Move()
     {
         while (true)
@@ -43,6 +39,7 @@ public class BasicMove : MonoBehaviour
             yield return null;
         }
     }
+   
 
     private void OnCollisionEnter(Collision collision)
     {
