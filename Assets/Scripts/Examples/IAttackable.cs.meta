@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scripts/Examples/IAttackable.cs.meta
 guid: 864f1c1fbcefca4439255edd57aa5482
 timeCreated: 1510378905
+=======
+guid: fe44dc4494a1ab54b927002246446a28
+timeCreated: 1510378743
+>>>>>>> 2440eabe121b9501df5671fdb076770337d2f064:Assets/Scripts/Examples/IAttackable.cs.meta
 licenseType: Free
 MonoImporter:
   externalObjects: {}
