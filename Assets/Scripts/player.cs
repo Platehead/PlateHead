@@ -18,7 +18,7 @@ public class player : MonoBehaviour
     void Update()
     {
         //마우스 왼쪽 버튼을 클릭했을 때 Fire 함수 호출
-        if (Input.GetMouseButtonDown(0))
+        if (Input.Getkey(0))
         {
             Fire();
         }
