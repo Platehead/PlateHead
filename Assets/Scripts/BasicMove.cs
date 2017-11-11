@@ -12,6 +12,7 @@ public class BasicMove : MonoBehaviour
     {
         StartCoroutine(Move());
         StartCoroutine(Jump());
+        StartCoroutine(Attack());
     }
 
     private void FixedUpdate()
@@ -38,6 +39,30 @@ public class BasicMove : MonoBehaviour
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * JumpForce);
                 IsJump = true;
+            }
+
+            yield return null;
+        }
+    }
+
+    IEnumerator Attack()
+    {
+        while (true)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                var Melee = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                Melee.transform.parent = transform;
+                Melee.GetComponent<BoxCollider>().isTrigger = true;
+                Melee.transform.localScale = new Vector3(0.74f, 0.185f, 1);
+                Melee.name = "melee_Cube";
+                Melee.transform.localPosition = new Vector3(0.77f, -0.2f, 0);
+
+                yield return new WaitForSeconds(0.075f);
+
+                Destroy(Melee);
+
+                yield return new WaitForSeconds(0.5f);
             }
 
             yield return null;
