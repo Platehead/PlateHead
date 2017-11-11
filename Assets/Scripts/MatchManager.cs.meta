@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scripts/MatchManager.cs.meta
 guid: 5697e5b1ae96048b0978e5116ab847c8
 timeCreated: 1510385195
 licenseType: Pro
+=======
+guid: e157b44021bd8c64a93b76d4bbd2b11c
+timeCreated: 1510386450
+licenseType: Free
+>>>>>>> b77a44b37d02b016687c41c495a259526cdbc89a:Assets/Scripts/Examples/CharacterExample.cs.meta
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0

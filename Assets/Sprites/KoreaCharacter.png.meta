@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 95d454bcaa3c149a5b079c2bac39bedd
 timeCreated: 1510384965
 licenseType: Pro
@@ -8,6 +9,18 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+=======
+guid: 855165fad482c9e439d3d6e4be8c4d34
+timeCreated: 1510385184
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName: {}
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+>>>>>>> b77a44b37d02b016687c41c495a259526cdbc89a
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -33,6 +46,7 @@ TextureImporter:
     filterMode: -1
     aniso: -1
     mipBias: -1
+<<<<<<< HEAD
     wrapU: 1
     wrapV: -1
     wrapW: -1
@@ -40,6 +54,15 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
+=======
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+>>>>>>> b77a44b37d02b016687c41c495a259526cdbc89a
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -47,9 +70,15 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
+<<<<<<< HEAD
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
+=======
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+>>>>>>> b77a44b37d02b016687c41c495a259526cdbc89a
   textureShape: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
@@ -57,6 +86,7 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+<<<<<<< HEAD
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -81,6 +111,9 @@ TextureImporter:
     overridden: 0
   - buildTarget: Android
     maxTextureSize: 2048
+=======
+    resizeAlgorithm: 0
+>>>>>>> b77a44b37d02b016687c41c495a259526cdbc89a
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
