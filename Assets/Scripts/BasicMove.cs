@@ -22,6 +22,7 @@ public class BasicMove : MonoBehaviour
                 transform.position -= new Vector3(Speed * Time.deltaTime, 0, 0);
             else if (Input.GetKey(KeyCode.D))
                 transform.position += new Vector3(Speed * Time.deltaTime, 0, 0);
+            
             yield return null;
         }
     }
