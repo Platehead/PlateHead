@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class HpManager : MonoBehaviour {
 
-    public float Hp { get; set; }
+    public float Hp { get; set; } 
 }
