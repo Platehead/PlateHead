@@ -19,4 +19,10 @@ public class TitleManager : MonoBehaviour {
     {
         SceneManager.LoadScene("Game");
     }
+
+    public void BackToMain()
+    {
+        SceneManager.LoadScene("TitleScreen");
+    }
+
 }
