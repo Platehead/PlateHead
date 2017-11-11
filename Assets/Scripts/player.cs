@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class TitleManager : MonoBehaviour
+public class player : MonoBehaviour
 {
 
     public GameObject bullet;
@@ -19,7 +18,7 @@ public class TitleManager : MonoBehaviour
     void Update()
     {
         //마우스 왼쪽 버튼을 클릭했을 때 Fire 함수 호출
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetMouseButtonDown(0))
         {
             Fire();
         }
