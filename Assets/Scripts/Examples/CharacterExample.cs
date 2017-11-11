@@ -6,8 +6,11 @@ public class CharacterExample : MonoBehaviour {
 	IAttackable attack1;
 	IAttackable attack2;
 	HpManager hpManager;
-
-	void Update() {
+    private void Start()
+    {
+        attack1 = GetComponent<IAttackable>();
+    }
+    void Update() {
 		if (Input.GetKeyDown(KeyCode.Z))
 			attack1.Attack();
 		
