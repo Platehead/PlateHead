@@ -694,7 +694,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1566991514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 512, y: 384, z: 0}
+  m_LocalPosition: {x: 303, y: 136, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 310362823}
@@ -799,8 +799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1e6f199b244814a910b34b377f2cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
-  firePos: {fileID: 0}
 --- !u!1 &1814995712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,6 +1014,7 @@ GameObject:
   - component: {fileID: 2132852715}
   - component: {fileID: 2132852714}
   - component: {fileID: 2132852720}
+  - component: {fileID: 2132852721}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1130,3 +1129,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 20
   Duration: 0.075
+--- !u!114 &2132852721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2132852713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e730d6866de8b4d95a987ebb4b152ede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
