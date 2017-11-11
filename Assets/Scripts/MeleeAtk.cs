@@ -26,6 +26,7 @@ public class MeleeAtk : MonoBehaviour {
                 var Melee = GameObject.CreatePrimitive(PrimitiveType.Cube);
                 Melee.transform.parent = transform;
                 Melee.GetComponent<BoxCollider>().isTrigger = true;
+                Melee.AddComponent<Rigidbody>();
                 Melee.transform.localScale = new Vector3(0.74f, 0.185f, 1);
                 Melee.name = "melee_Cube";
                 Melee.transform.localPosition = new Vector3(0.77f, -0.2f, 0);
