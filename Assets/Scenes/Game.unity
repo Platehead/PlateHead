@@ -542,7 +542,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -799,6 +799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1e6f199b244814a910b34b377f2cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
+  firePos: {fileID: 0}
 --- !u!1 &1814995712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,8 +1123,10 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2132852713}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f9d42c9231c424293f419a8b380a95, type: 3}
+  m_Script: {fileID: 11500000, guid: 12a4c79a60a40304ebea4e4eec12533b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Damage: 20
+  Duration: 0.075
