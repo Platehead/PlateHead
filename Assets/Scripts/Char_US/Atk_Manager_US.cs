@@ -4,25 +4,23 @@ using UnityEngine;
 
 public class Atk_Manager_US : MonoBehaviour
 {
-    IAttackable melee;
-    IAttackable ranged;
-    IAttackable skill_1;
-    IAttackable skill_2;
+    IAttackable Basic;
+    IAttackable Skill_1;
+    IAttackable Skill_2;
     HpManager hpManager;
 
     private void Start()
     {
-        melee = GetComponent<MeleeAtk>();
-        ranged = GetComponent<Basic_Atk_US>();
+        Basic = GetComponent<Basic_Atk_US>();
+        Skill_2 = GetComponent<Skill_2_US>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-            melee.Attack();
-
         if (Input.GetKeyDown(KeyCode.Mouse0))
-            ranged.Attack();
+            Basic.Attack();
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+            Skill_2.Attack();
     }
 
     void GetDamage(float damage)
