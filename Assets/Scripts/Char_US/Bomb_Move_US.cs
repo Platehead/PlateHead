@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bomb_Move_US : MonoBehaviour {
     
     public ParticleSystem Eff;
+    public float time;
     public float Speed;
 
 	void Start ()
@@ -14,11 +15,14 @@ public class Bomb_Move_US : MonoBehaviour {
 
     IEnumerator Move()
     {
-        var MousePos = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
+        var MousePos = new Vector3(Input.mousePosition.x, Screen.height - Input.mousePosition.y, 0);
         int Flip = (MousePos.x < Screen.width / 2) ? -1 : 1;
+
+        var Screenpoint = Input.mousePosition;
+        Screenpoint.z = 10f;
         float check = 0;
 
-        while (check < 100)
+        while (check < time * 100)
         {
             transform.position += new Vector3(Speed * Flip, 0, 0);
             check += 1;
