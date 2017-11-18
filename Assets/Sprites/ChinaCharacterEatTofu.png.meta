@@ -1,7 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Sprites/ChinaCharacterEatTofu.png.meta
 guid: 4c7dbf85e88259548bd234c21f0babd9
 timeCreated: 1510991520
 licenseType: Free
+=======
+guid: 843875f5fc9b8fb48bccd104bc3decee
+>>>>>>> 75390043e3232cd5acb50837788faae803d58515:Assets/Sprites/ChinaCharacterEatTofu.png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
