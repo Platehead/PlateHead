@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class jump : MonoBehaviour {
+public class jump1 : MonoBehaviour
+{
 
     private Transform _transform;
     private bool _isJumping;
@@ -23,7 +24,7 @@ public class jump : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && !_isJumping)
+        if (Input.GetKey(KeyCode.UpArrow) && !_isJumping)
         {
             _isJumping = true;
             _posY = _transform.position.y;

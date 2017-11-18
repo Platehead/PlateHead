@@ -19,7 +19,7 @@ public class Bullet_Move_US : MonoBehaviour {
         while (true)
         {
             transform.position += new Vector3(Speed * Flip, 0, 0);
-            yield return new WaitForSeconds(0.01f);
+            yield return null;
         }
     }
 

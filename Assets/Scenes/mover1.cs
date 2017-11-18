@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mover : MonoBehaviour {
+public class mover1 : MonoBehaviour
+{
 
     // Use this for initialization
 
@@ -10,17 +11,15 @@ public class mover : MonoBehaviour {
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector3.right * 5.0f * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.left * 5.0f * Time.deltaTime);
         }
     }
 }
 
-
-    
