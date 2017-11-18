@@ -1,9 +1,24 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: fc192c65c974a554e9c9200e54c3066d
 timeCreated: 1510989861
 licenseType: Free
 TextScriptImporter:
   externalObjects: {}
+=======
+<<<<<<< HEAD
+guid: b666518a106e24a63ad1f501b684d156
+timeCreated: 1510990142
+licenseType: Pro
+TextScriptImporter:
+=======
+guid: 82a58e566fe2431409e3fb9437fc3871
+timeCreated: 1510990009
+licenseType: Free
+TextScriptImporter:
+  externalObjects: {}
+>>>>>>> baf816667d91401748b7788dc9fed39568ddf9c8
+>>>>>>> da581b0cbfb521a6a95b71af2ccd06fcf2898a70
   userData: 
   assetBundleName: 
   assetBundleVariant: 
