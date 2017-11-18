@@ -221,11 +221,12 @@ GameObject:
   - component: {fileID: 743750926}
   - component: {fileID: 743750925}
   - component: {fileID: 743750924}
-  - component: {fileID: 743750930}
   - component: {fileID: 743750929}
+  - component: {fileID: 743750931}
+  - component: {fileID: 743750930}
   m_Layer: 0
-  m_Name: Player
-  m_TagString: Untagged
+  m_Name: Player-US
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,18 +243,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.01763916, y: 0.020803452}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 5.73, y: 6.16}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 5.5240097, y: 6.155697}
   m_EdgeRadius: 0
 --- !u!50 &743750925
 Rigidbody2D:
@@ -322,7 +323,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 779948f3e866baa468bc00de3408fece, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -340,7 +341,7 @@ Transform:
   m_GameObject: {fileID: 743750923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.9749227, y: -4.42, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -353,7 +354,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 743750923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e157b44021bd8c64a93b76d4bbd2b11c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4157bc75700b9e24fb408a3e8b70071e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &743750930
@@ -364,11 +365,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 743750923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a36c7ed513743054ea257af0a5b45e45, type: 3}
+  m_Script: {fileID: 11500000, guid: 35892dd730219584290c26680b62ad74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 20
-  Duration: 1
+  Bomb: {fileID: 4803370783686024, guid: 5a5b02e2247b3f64f881db397ec3d4e0, type: 2}
+  Speed: 0.03
+  Time: 1.5
+  Eff: {fileID: 198442668099245170, guid: fb1864fb2c0268742ba0abb94df175e1, type: 2}
+--- !u!114 &743750931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 743750923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045297e350ee13448b5ab3e4b6830a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 4413080261040228, guid: ab21298bcb255b143a1918c62584d2a4, type: 2}
+  Speed: 0.5
+  DelayOnShoots: 0.25
 --- !u!1 &841598763
 GameObject:
   m_ObjectHideFlags: 0
