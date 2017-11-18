@@ -11,6 +11,7 @@ public class CharacterExample : MonoBehaviour
     private void Start()
     {
         attack1 = GetComponent<MeleeAtk>();
+        attack2 = GetComponent<Basic_Atk_US>();
     }
 
     void Update()
@@ -18,7 +19,7 @@ public class CharacterExample : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
             attack1.Attack();
 
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
             attack2.Attack();
     }
 
