@@ -15,16 +15,21 @@ public class Bomb_Move_US : MonoBehaviour {
 
     IEnumerator Move()
     {
-        var MousePos = new Vector3(Input.mousePosition.x, Screen.height - Input.mousePosition.y, 0);
-        int Flip = (MousePos.x < Screen.width / 2) ? -1 : 1;
+        var TargetPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        TargetPos.z = transform.position.z;
+        TargetPos -= transform.position;
+        TargetPos = transform.position + TargetPos.normalized * 300;
 
-        var Screenpoint = Input.mousePosition;
-        Screenpoint.z = 10f;
+        float AngleRad = Mathf.Atan2(TargetPos.y - transform.position.y, TargetPos.x - transform.position.x);
+        float AngleDeg = (180 / Mathf.PI) * AngleRad;
+        transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
+        
         float check = 0;
 
         while (check < time * 100)
         {
-            transform.position += new Vector3(Speed * Flip, 0, 0);
+            transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
+            transform.position = Vector3.MoveTowards(transform.position, TargetPos, Speed);
             check += 1;
             yield return new WaitForSeconds(0.01f);
         }
