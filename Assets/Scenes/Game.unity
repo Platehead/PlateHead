@@ -245,9 +245,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.01763916, y: 0.020803452}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 2.54, y: 0, z: 11.96, w: 2.26}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.73, y: 6.16}
+    oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -323,7 +323,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 779948f3e866baa468bc00de3408fece, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dd1fb939070dfe14d84ee706b41b3a44, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 1434204720}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
