@@ -1,14 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 442545551e45047b89b0f4f505d06997
 TextureImporter:
   fileIDToRecycleName: {}
-=======
-guid: 56afe2177c90bf64e8c761d0479546eb
-TextureImporter:
-  fileIDToRecycleName: {}
-  externalObjects: {}
->>>>>>> c011acd20abafc4663625f85ec3d53a23af5302b
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -62,7 +55,6 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-<<<<<<< HEAD
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -87,9 +79,6 @@ TextureImporter:
     overridden: 0
   - buildTarget: Android
     maxTextureSize: 2048
-=======
-    resizeAlgorithm: 0
->>>>>>> c011acd20abafc4663625f85ec3d53a23af5302b
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
