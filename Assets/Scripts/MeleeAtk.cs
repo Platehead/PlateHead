@@ -19,12 +19,16 @@ public class MeleeAtk : MonoBehaviour, IAttackable {
 
     IEnumerator AttackExcute()
     {
+        var MousePos = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
         var Melee = GameObject.CreatePrimitive(PrimitiveType.Cube);
         Melee.transform.parent = transform;
         Melee.GetComponent<BoxCollider>().isTrigger = true;
         Melee.transform.localScale = new Vector3(0.74f, 0.185f, 1);
         Melee.name = "melee_Cube";
-        Melee.transform.localPosition = new Vector3(0.77f, -0.2f, 0);
+
+        int Flip = (MousePos.x < Screen.width / 2) ? -1 : 1;
+        Debug.Log(Flip);
+        Melee.transform.localPosition = new Vector3(0.77f * Flip, -0.2f, 0);
 
         yield return new WaitForSeconds(Duration);
 
