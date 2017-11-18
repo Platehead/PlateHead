@@ -33,16 +33,15 @@ public class BasicMove : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.W) && !IsJump)
             {
-                GetComponent<Rigidbody>().AddForce(Vector3.up * JumpForce);
+                GetComponent<Rigidbody2D>().AddForce(Vector3.up * JumpForce);
                 IsJump = true;
             }
 
             yield return null;
         }
     }
-   
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "Wall")
             IsJump = false;
