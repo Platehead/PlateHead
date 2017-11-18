@@ -32,11 +32,7 @@ TextureImporter:
     aniso: -1
     mipBias: -1
     wrapU: 1
-<<<<<<< HEAD
-    wrapV: 1
-=======
     wrapV: -1
->>>>>>> 721d60350b1b04a35e8328f704d009db45be38cd
     wrapW: -1
   nPOTScale: 0
   lightmap: 0
@@ -83,15 +79,6 @@ TextureImporter:
     overridden: 0
   - buildTarget: Android
     maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
