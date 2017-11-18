@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 8f6741de527b15f4194691b047d2111b
-timeCreated: 1510383265
-=======
-guid: 399f7992d3c71cc48b5b6038aa072249
-timeCreated: 1510383465
->>>>>>> 6311034aaad6c21592b8e8e2d1f362ff903121bc
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 4
@@ -39,7 +32,11 @@ TextureImporter:
     aniso: -1
     mipBias: -1
     wrapU: 1
+<<<<<<< HEAD
+    wrapV: 1
+=======
     wrapV: -1
+>>>>>>> 721d60350b1b04a35e8328f704d009db45be38cd
     wrapW: -1
   nPOTScale: 0
   lightmap: 0
@@ -86,6 +83,15 @@ TextureImporter:
     overridden: 0
   - buildTarget: Android
     maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
