@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 816c15d76d46c462faef95e9309e5827
+timeCreated: 1510982208
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SeoulNamsan
+  fontNames:
+  - SeoulNamsan
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
