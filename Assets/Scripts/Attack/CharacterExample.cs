@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class CharacterExample : MonoBehaviour
 {
-    IAttackable attack1;
-    IAttackable attack2;
+    IAttackable melee;
+    IAttackable ranged;
+    IAttackable skill_1;
+    IAttackable skill_2;
     HpManager hpManager;
 
     private void Start()
     {
-        attack1 = GetComponent<MeleeAtk>();
+        melee = GetComponent<MeleeAtk>();
+        ranged = GetComponent<Basic_Atk_US>();
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
-            attack1.Attack();
+            melee.Attack();
 
-        if (Input.GetKeyDown(KeyCode.X))
-            attack2.Attack();
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+            ranged.Attack();
     }
 
     void GetDamage(float damage)
