@@ -13,7 +13,7 @@ public class Test_Bot : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("TRIGGER!!!!!");
-        if (collision.gameObject.name == "melee_Cube")
+        if (collision.tag == "Melee")
         {
             hp.Hp -= collision.gameObject.GetComponent<MeleeAtk>().Damage;
             Debug.Log("OnTriggerEnter2D");

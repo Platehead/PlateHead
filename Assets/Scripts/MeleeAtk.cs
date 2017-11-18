@@ -11,6 +11,10 @@ public class MeleeAtk : MonoBehaviour, IAttackable {
     /// 근접 공격이 지속되는 시간입니다.
     /// </summary>
     public float Duration = 0.075f;
+    /// <summary>
+    /// 공격과 공격 사이의 딜레이입니다.
+    /// </summary>
+    public float Delay = 0.75f;
 
     public void Attack()
     {
@@ -26,9 +30,9 @@ public class MeleeAtk : MonoBehaviour, IAttackable {
         //마우스 위치에 따라서 공격의 방향 설정
         int Flip = (MousePos.x < Screen.width / 2) ? -1 : 1;
         Melee.transform.localPosition = new Vector3(0.095f * Flip, -0.03f, 0);
-        
+
         Melee.transform.localScale = new Vector3(0.115f, 0.03f, 1);
-        Melee.name = "melee_Cube";
+        Melee.tag = "Melee";
         Destroy(Melee.GetComponent<BoxCollider>());
 
         yield return new WaitForSeconds(0.0001f);
@@ -40,7 +44,7 @@ public class MeleeAtk : MonoBehaviour, IAttackable {
 
         Destroy(Melee);
 
-        yield return new WaitForSeconds(0.5f);
-        yield return null;
+        yield return new WaitForSeconds(Delay);
+        //yield return null;
     }
 }
