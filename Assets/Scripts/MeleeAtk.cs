@@ -11,7 +11,7 @@ public class MeleeAtk : MonoBehaviour, IAttackable {
     /// 근접 공격이 지속되는 시간입니다.
     /// </summary>
     public float Duration = 0.075f;
-    
+
     public void Attack()
     {
         StartCoroutine(AttackExcute());
@@ -22,21 +22,25 @@ public class MeleeAtk : MonoBehaviour, IAttackable {
         var MousePos = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
         var Melee = GameObject.CreatePrimitive(PrimitiveType.Cube);
         Melee.transform.parent = transform;
-        Melee.GetComponent<BoxCollider>().isTrigger = true;
-        Melee.transform.localScale = new Vector3(0.74f, 0.185f, 1);
-        Melee.name = "melee_Cube";
-
+        
+        //마우스 위치에 따라서 공격의 방향 설정
         int Flip = (MousePos.x < Screen.width / 2) ? -1 : 1;
-        Debug.Log(Flip);
-        Melee.transform.localPosition = new Vector3(0.77f * Flip, -0.2f, 0);
+        Melee.transform.localPosition = new Vector3(0.095f * Flip, -0.03f, 0);
+        
+        Melee.transform.localScale = new Vector3(0.115f, 0.03f, 1);
+        Melee.name = "melee_Cube";
+        Destroy(Melee.GetComponent<BoxCollider>());
 
+        yield return new WaitForSeconds(0.0001f);
+
+        Melee.AddComponent<BoxCollider2D>();
+        Melee.GetComponent<BoxCollider2D>().isTrigger = true;
+        
         yield return new WaitForSeconds(Duration);
 
         Destroy(Melee);
 
         yield return new WaitForSeconds(0.5f);
-
-
         yield return null;
     }
 }
