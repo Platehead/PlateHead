@@ -381,8 +381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 4413080261040228, guid: ab21298bcb255b143a1918c62584d2a4, type: 2}
-  Speed: 0.5
-  DelayOnShoots: 0.25
+  Speed: 0.1
+  DelayOnShoots: 10
 --- !u!1 &841598763
 GameObject:
   m_ObjectHideFlags: 0
