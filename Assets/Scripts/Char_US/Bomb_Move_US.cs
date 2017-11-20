@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Bomb_Move_US : MonoBehaviour {
-    
-    public ParticleSystem Eff;
+
+    public Sprite sprite;
     public float time;
     public float Speed;
 
@@ -34,10 +34,20 @@ public class Bomb_Move_US : MonoBehaviour {
             yield return new WaitForSeconds(0.01f);
         }
 
-        var eff = Instantiate(Eff);
+        transform.GetComponent<SpriteRenderer>().sprite = sprite;
+        Debug.Log(transform.GetComponent<SpriteRenderer>().sprite.name);
 
-        eff.transform.position = transform.position;
-        eff.Play();
+        yield return StartCoroutine(Bomb_FadeOut());
+    }
+
+    IEnumerator Bomb_FadeOut()
+    {
+        while (transform.GetComponent<SpriteRenderer>().color.a > 1)
+        {
+            transform.GetComponent<SpriteRenderer>().color -= new Color(0, 0, 0, 1);
+            yield return null;
+        }
+
         Destroy(gameObject);
     }
 
