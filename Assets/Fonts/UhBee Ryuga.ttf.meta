@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 698bf32f70b654f48ae726b0654915b5
+timeCreated: 1511425083
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: UhBee Ryuga
+  fontNames:
+  - UhBee Ryuga
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2b48de0a817294113ab4660bdb6ebe69, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
